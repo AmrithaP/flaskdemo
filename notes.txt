@@ -1,0 +1,14 @@
+flask - python web framework for creating an application.
+
+# Flask app routing 
+
+@app.route("/",methods=["GET"]) # 2 imp parameters - home or / , GET/POST/PUT
+def index():
+  return "welcome to index page"
+
+
+# Methods in Server call
+
+GET - Receive data from server
+POST - Sending data to server
+

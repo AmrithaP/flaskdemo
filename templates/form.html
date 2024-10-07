@@ -1,0 +1,23 @@
+<html>
+<header>
+  <title>Calculate MARKS</title>
+</header>
+
+<body>
+  <div class="Calculate">
+    <h1>Calculate Average marks</h1>
+
+    <!-- Main input for receiving query to our ML-->
+    <form action="{{ url_for('form')}}" method="post">
+      <input type="text" name="maths" placeholder="Maths" required="required"/>
+      <input type="text" name="science" placeholder="Science" required="required"/>
+      <input type="text" name="history" placeholder="History" required="required"/>
+
+      <button type="submit" class="btn btn-primary btn-block btn-large">Calculate</button>
+    </form>
+    <br>
+    <br>
+    <h3>The Average marks of the person is {{score}}</h3> <!--Jinja2 engine - web template system to add variable dynamically, hence score gets the value -->
+  </div>
+</body>
+</html>
